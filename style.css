@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #4ba2fa;
+    min-height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label:hover, #userVsComputer:hover, #userVsPlayer:hover{
+    cursor: pointer;
+}
+
+.noticeBoard{
+    display: none;
+
+    position: absolute;
+    top: 40%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: min(300px, 80vw);
+    margin-inline: 20px;
+}
+
+.noticeBoard h1{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.noticeBoard .buttons{
+    display: flex;
+    justify-content: space-around;
+    padding-inline: 10%;
+    gap: 10px;
+
+}
+
+.noticeBoard button{
+    padding: 10px;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+.noticeBoard button:hover{
+    cursor: pointer;
+}
+
+.noticeBoard button:active{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 8px;
+}
+
+.header {
+    background-color: dodgerblue;
+    color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.gamersSpecifier {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.scoreBoard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 4px;
+}
+
+.scoreBoard p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.scoreBoard span {
+    font-weight: 500;
+}
+
+.scoreBoard button {
+    padding: 8px;
+    font-size: 12px;
+    border: 0;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.scoreBoard button:hover{
+    cursor: pointer;
+}
+
+.scoreBoard button:active{
+    border: 2px solid black;
+    padding: 6px;
+}
+
+.gameBoard {
+    background-color: dodgerblue;
+    box-shadow: 0px 0px 10px 0px #00000080;
+
+    width: min(300px, 80vw);
+    height: min(300px, 80vw);
+    margin-inline: auto;
+
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-gap: 4px;
+
+    margin-bottom: 20px;
+}
+
+@media (height < 550px) {
+    .gameBoard{
+        width: 40vh;
+        height: 40vh;
+    }
+    .noticeBoard{
+        width: 40vh;
+    }
+}
+
+.gameBoard div {
+    background-color: white;
+    font-size: 90px;
+    text-align: center;
+    font-family: 'Sedgwick Ave Display', cursive;
+    overflow: hidden;
+}
+
+@media (width < 370px){
+    .gameBoard div{
+        font-size: 80px;
+    }
+}
+
+@media (width < 320px){
+    .gameBoard div{
+        font-size: 70px;
+    }
+}
+
+
+
+.gameBoard div:hover {
+    cursor: pointer;
+}
+
+.gameBoard div:active {
+    background-color: #d8d8d8;
+}
+
+.turn {
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+@media (width < 290px) {
+
+    .header,
+    .turn {
+        margin-inline: 5px;
+    }
+}

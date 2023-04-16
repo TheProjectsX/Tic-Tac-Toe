@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <div class="noticeBoard" id="noticeBoard">
+        <h1 id="noticeHeader">Match Draw!</h1>
+        <div class="buttons">
+            <button id="goBack">Go Back</button>
+            <button id="restartGame">Restart</button>
+        </div>
+    </div>
+    <div class="contaier">
+        <div class="gameContainer">
+            <div class="header">
+                <h1>Tic-Tac-Toe</h1>
+                <div class="gamersSpecifier">
+                    <div>
+                        <input type="radio" name="userVs" id="userVsComputer" checked>
+                        <label for="userVsComputer">Computer</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="userVs" id="userVsPlayer">
+                        <label for="userVsPlayer">Player</label>
+                    </div>
+                </div>
+                <div class="scoreBoard">
+                    <p><spna id="player01Type">User</spna>: <span id="player01Score">00</span></p>
+                    <p><spna id="player02Type">Computer</spna>: <span id="player02Score">00</span></p>
+                </div>
+                <div class="scoreBoard">
+                    <button id="resetScore">Reset Score</button>
+                    <p>Draw: <span id="drawScore">00</span></p>
+                    <button id="resetGame">Reset Game</button>
+
+                </div>
+            </div>
+            <div class="gameBoard">
+                <div id="optionBox1"></div>
+                <div id="optionBox2"></div>
+                <div id="optionBox3"></div>
+                <div id="optionBox4"></div>
+                <div id="optionBox5"></div>
+                <div id="optionBox6"></div>
+                <div id="optionBox7"></div>
+                <div id="optionBox8"></div>
+                <div id="optionBox9"></div>
+            </div>
+
+            <div class="turn">
+                <p id="turnOf"></p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
