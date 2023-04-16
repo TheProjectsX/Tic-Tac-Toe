@@ -14,6 +14,13 @@ body {
     align-items: center;
 }
 
+@media (width < 450px){
+    body{
+       justify-content: flex-start;
+       padding-top: 10%;
+    }
+}
+
 label:hover, #userVsComputer:hover, #userVsPlayer:hover{
     cursor: pointer;
 }
